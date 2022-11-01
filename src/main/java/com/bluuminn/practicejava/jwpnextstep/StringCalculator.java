@@ -27,7 +27,7 @@ public class StringCalculator {
 
     private int[] toInt(String[] values) {
         return Arrays.stream(values)
-                .mapToInt(StringCalculator::toPositive)
+                .mapToInt(this::toPositive)
                 .toArray();
     }
 
